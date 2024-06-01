@@ -1,0 +1,148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+    min-height: 100vh;
+    background-color: #22223B;
+    color: white;
+
+}
+
+header{
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0% auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:#C9ADA7 ;
+    margin-bottom: 1rem;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group{
+    display: flex;
+    gap: 10PX;
+    flex-direction: column;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius:1REM ;
+}
+
+.inputarea{
+    flex: 1 1 0%;
+    background-color:#4A4E69 ;
+    padding: 1rem;
+    border-radius: 1rem;
+    color:#F2E9E4 ;
+    font-size: 1.3rem;
+    width: 50vw;
+}
+
+.inputarea::placeholder{
+    color: #22223B;
+}
+
+#submitbtn{
+    height: 4rem;
+    color: #4A4E69;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: #C9ADA7;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#submitbtn:hover{
+    opacity: 0.5;
+}
+
+.container2{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #F2E9E4;
+    margin-bottom: 1rem;
+}
+
+#regns .regn{
+    display: flex;
+    justify-content: space-between;
+    background-color: #22223B;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#regns .regn .content{
+    flex: 1 1 0%;
+}
+
+#regns .regn .content .text{
+    color: #C9ADA7;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#regns .regn .content .text:not(:read-only){
+    color: #C9ADA7;
+}
+
+#regns .regn .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.regn .actions button{
+    color: #C9ADA7;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.regn .actions button:hover{
+    opacity: 0.7;
+}
+
+/* .regn .action .edit{
+    background-color: aqua;
+
+}
+
+.regn .actions .delete{
+    color: aquamarine;
+} */
