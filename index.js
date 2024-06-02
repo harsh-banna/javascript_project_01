@@ -75,6 +75,7 @@ window.addEventListener('load',() => {
         });
         task_delete.addEventListener('click',()=> {
             listel.removeChild(task_el);
+            localStorage.clear("registrationData");
         });
         
         localStorage.setItem("registrationData",JSON.stringify(task));
